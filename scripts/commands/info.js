@@ -28,7 +28,7 @@ var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
   
 var callback = () => api.sendMessage({body:`
 --------------------------------------------
-𝐍𝐚𝐦𝐞       : 𝘿𝘼𝙉𝙂𝙀𝙍-𝙎𝙀𝙔𝘼𝙈👀🥂 🍷 
+𝐍𝐚𝐦𝐞       : 𝑵𝑨𝒀𝑶𝑲⸙ //⓫⓻➎_𝙎𝙀𝙔𝘼𝙈👀🥂 🍷 
 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : 𝙬𝙬𝙬.𝙛𝙖𝙘𝙚𝙗𝙤𝙤𝙠.𝙘𝙮𝙗𝙚𝙧𝙯𝙤𝙣𝙚71𝙗𝙙
 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧   : 𝐈𝐬𝐥𝐚𝐦
 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬:𝙠𝙝𝙪𝙡𝙣𝙖 - 𝙨𝙖𝙩𝙠𝙝𝙞𝙧𝙖
@@ -42,6 +42,6 @@ var callback = () => api.sendMessage({body:`
 
 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 : https://www.facebook.com/𝙘𝙮𝙗𝙚𝙧 𝙡𝙚𝙖𝙙𝙚𝙧`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
-      return request(encodeURI(`https://graph.facebook.com/61553835175039/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
+      return request(encodeURI(`https://graph.facebook.com/61553312939129/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
    };
